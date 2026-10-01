@@ -1,0 +1,7 @@
+dist/
+data/plants.json
+data/overview.svg
+__pycache__/
+.env
+.env.*
+node_modules/
