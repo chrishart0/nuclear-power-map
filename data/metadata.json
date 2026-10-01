@@ -1,0 +1,36 @@
+{
+  "title": "U.S. Nuclear Atlas",
+  "prepared": "2026-10-01",
+  "fleet_snapshot": "2024-12-31",
+  "capacity_year": 2024,
+  "capacity_unit": "MW(e), net summer",
+  "date_precision": "month",
+  "source_method": "Hand-transcribed and validated from the cited EIA table and IAEA Table 14; locations rounded to 0.001 degrees.",
+  "scope": "Operating commercial electricity-generating reactors in the 2024 reference fleet. Excludes retired, suspended/out-of-service, proposed, under-construction and research reactors. No live outage or restart tracking.",
+  "sources": {
+    "capacity": {
+      "title": "EIA — U.S. Nuclear Reactors and Reactor Capacity",
+      "url": "https://www.eia.gov/nuclear/reactors/reactorcapacity.php",
+      "note": "2024 net summer electrical capacity, released July 31, 2025. Integer MW(e) as published. This series was subsequently discontinued."
+    },
+    "commissioning": {
+      "title": "IAEA — Nuclear Power Reactors in the World, 2025 edition",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-2-45_web.pdf#page=50",
+      "note": "Table 14, printed pages 43–47 (PDF pages 50–54). Commercial operation month/year, not first grid connection. Includes reactor types and operational roster as of December 31, 2024."
+    },
+    "coordinates": {
+      "title": "Explore Nuclear — U.S. site coordinates",
+      "url": "https://explorenuclear.com/maps/map-of-us-nuclear-sites/",
+      "note": "Approximate public site coordinates only, rounded to three decimal degrees. Its operational dates, reactor counts and status descriptions were NOT used."
+    },
+    "fleet": {
+      "title": "EIA — U.S. nuclear plant fleet FAQ",
+      "url": "https://www.eia.gov/tools/faqs/faq.php?id=207&t=2",
+      "note": "54 operating plants, 94 reactors. The map is a fixed 2024 capacity snapshot, not a live fleet or restart-status feed."
+    }
+  },
+  "site_count": 54,
+  "reactor_count": 94,
+  "state_count": 28,
+  "capacity_mw": 96823
+}
