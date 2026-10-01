@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101f2b"><meta name="referrer" content="strict-origin-when-cross-origin">
+<title>U.S. Nuclear Atlas · Capacity & commissioning</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css"><script src="config.js"></script>
+</head>
+<body>
+<a class="skip" href="#search">Skip to plant search</a>
+<header class="header">
+  <a href="#" id="home" class="brand" aria-label="Reset to the United States"><span class="brand-icon" aria-hidden="true">◉</span><span>NUCLEAR <b>ATLAS</b><small>UNITED STATES</small></span></a>
+  <span class="header-description">Where it is. When it opened. What it can supply.</span>
+  <div class="header-actions"><button id="sourcesBtn">Sources & scope</button><button id="exportBtn">Export ↓</button><span class="snapshot">2024 reference fleet</span></div>
+</header>
+<div class="app">
+  <aside class="sidebar" aria-label="Explore nuclear plants">
+    <div class="search-area">
+      <div class="eyebrow">EXPLORE THE FLEET</div>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a plant or state…" aria-label="Search plants or states" autocomplete="off"><kbd>/</kbd></label>
+      <div class="shortcuts"><button id="allUSBtn" class="chip">All U.S.</button><button id="tennesseeBtn" class="chip">Tennessee</button><button id="resetBtn" class="link-button">Reset</button></div>
+      <details id="filters"><summary>Refine plants <span id="filterCount"></span></summary><div class="filter-grid">
+        <label>State<select id="stateFilter"><option value="">All states</option></select></label>
+        <label>Reactor type<select id="typeFilter"><option value="">All types</option><option value="PWR">Pressurized water</option><option value="BWR">Boiling water</option></select></label>
+        <label>Site capacity<select id="capacityFilter"><option value="0">Any capacity</option><option value="1000">1,000+ MW</option><option value="2000">2,000+ MW</option><option value="3000">3,000+ MW</option><option value="4000">4,000+ MW</option></select></label>
+        <label>Sort plants<select id="sortFilter"><option value="capacity">Largest first</option><option value="name">Name</option><option value="oldest">Oldest unit first</option><option value="newest">Latest unit first</option></select></label>
+      </div></details>
+    </div>
+    <div id="listHeader" class="list-header"><strong id="resultCount">Loading plants…</strong><span>Capacity / opening years</span></div>
+    <div id="plantList" class="plant-list"></div>
+    <section id="detailPanel" class="detail" tabindex="-1" aria-label="Plant details" hidden></section>
+    <button class="scope-note" id="scopeBtn"><strong>Capacity, not live generation.</strong><span>2024 net summer MW(e) · Commercial-operation dates</span></button>
+  </aside>
+  <main class="main">
+    <div class="summary-strip"><div><span class="eyebrow" id="scopeTitle">U.S. REFERENCE FLEET</span><h1 id="regionTitle">Power, on the map.</h1></div><div id="metrics" class="metrics" aria-live="polite"></div><div class="view-switch" role="group" aria-label="Map or table"><button id="mapViewBtn" class="active" aria-pressed="true">Map</button><button id="tableViewBtn" aria-pressed="false">Table</button></div></div>
+    <section class="map-stage" id="mapStage" aria-label="Nuclear plant map">
+      <div id="offlineMap" class="basemap"></div><div id="mapboxMap" class="basemap" hidden></div>
+      <svg id="mapOverlay" class="map-overlay" aria-label="Plant markers and labels"></svg>
+      <div class="map-toolbar map-obstacle"><div class="mode-switch" role="group" aria-label="What the map shows"><button id="capacityMode" class="active" aria-pressed="true">Capacity</button><button id="datesMode" aria-pressed="false">Opening dates</button></div><p id="modeHint">Bigger circle, more electrical capacity.</p></div>
+      <div class="map-actions map-obstacle"><button id="fitBtn" aria-label="Fit all filtered plants" title="Fit filtered plants">⤢</button><button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button><label class="label-toggle"><input id="showLabels" type="checkbox" checked>Labels</label></div>
+      <div class="legend map-obstacle" id="legend"></div>
+      <div id="mapStatus" class="map-status map-obstacle" role="status">Loading geographic overview…</div>
+      <div id="mapCredit" class="map-credit">Overview: GSHHG / Basemap · Approximate site centers</div>
+      <div id="hoverTip" class="hover-tip" role="tooltip" hidden></div>
+      <div id="emptyMap" class="empty-map" hidden><strong>No plants match.</strong><p>Try a later year or fewer filters.</p><button id="emptyReset">Reset filters</button></div>
+    </section>
+    <section id="tableStage" class="table-stage" aria-label="Filtered plant table" hidden><table><thead><tr><th>Plant</th><th>State</th><th>Unit openings</th><th>Reactors</th><th>Capacity, MW</th></tr></thead><tbody id="tableBody"></tbody></table></section>
+    <section class="timeline" aria-label="Filter by commissioning year">
+      <div class="timeline-copy"><h2>When did these reactors open?</h2><p id="timelineNote">Filter the 2024 fleet, not a historical fleet.</p><button id="playTimeline" class="play" aria-label="Play commissioning timeline">▶ Play</button></div>
+      <div class="timeline-track"><div id="histogram" class="histogram" aria-hidden="true"></div><input type="range" id="yearFilter" min="1969" max="2024" value="2024" aria-label="Include reactors commissioned through year"><div class="timeline-labels"><span>1969</span><span>1980</span><span>1990</span><span>2000</span><span>2010</span><span>2024</span></div></div>
+      <div class="year-readout"><label for="yearFilter">Opened through</label><output id="yearOutput">2024</output><button id="allYearsBtn">All years ↗</button></div>
+    </section>
+  </main>
+</div>
+<dialog id="sourcesDialog"><div class="dialog-heading"><h2>Read the map correctly.</h2><button data-close aria-label="Close sources">×</button></div><div class="notice"><strong>2024 reference fleet, not live status.</strong><p>54 commercial plant sites and 94 reactors. Retired, suspended/out-of-service, planned, construction and research reactors are excluded. All included sites are in the contiguous U.S.</p></div><h3>Power</h3><p>Net summer electrical capacity in MW(e), as published for 2024. This is capability, not current production, annual generation or thermal power. 1,000 MW = 1 GW.</p><h3>Dates</h3><p>Commercial-operation month/year for each included reactor. A plant’s date range covers its oldest through newest included unit. Color represents the <strong>oldest included unit</strong>, not its last expansion. Retired units at the same site are excluded.</p><h3>Groups and filters</h3><p>Outlined, numbered circles group nearby sites. In Capacity mode their area represents combined capacity; in Opening dates mode they remain neutral because they contain multiple dates. Select a group to choose a plant or zoom in.</p><p>The year filter selects reactors in this reference fleet that opened by the chosen year; their power stays at <strong>2024 capacity</strong>. The histogram always shows all 94 reference reactors, not the filtered population or historical fleet size.</p><div id="sourceLinks"></div></dialog>
+<dialog id="exportDialog"><div class="dialog-heading"><h2>Export filtered data.</h2><button data-close aria-label="Close export">×</button></div><p id="exportNote"></p><button class="export-option" id="csvExport">Reactor table <strong>CSV ↓</strong></button><button class="export-option" id="geoExport">Plant locations <strong>GeoJSON ↓</strong></button><p>Exports include source metadata and respect the filters. Mapbox configuration is never exported.</p></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<noscript><p>JavaScript is required for the atlas. The data is also available in <a href="data/plants.json">plants.json</a>.</p></noscript>
+<script type="module" src="app.js"></script>
+</body>
+</html>
