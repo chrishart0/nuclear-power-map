@@ -1,0 +1,10 @@
+{
+  "name": "nuclear-power-map",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "python3 build.py && node --test tests/core.test.js",
+    "build": "python3 build.py",
+    "start": "python3 -m http.server 8000 --directory dist"
+  }
+}
