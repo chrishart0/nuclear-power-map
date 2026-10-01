@@ -1,0 +1,55 @@
+id,name,state,state_name,latitude,longitude,overview_x,overview_y,notes
+arkansas-nuclear-one,Arkansas Nuclear One,AR,Arkansas,35.31,-93.231,664.31,426.81,[]
+beaver-valley,Beaver Valley,PA,Pennsylvania,40.623,-80.431,916.11,294.13,"[""Commercial-operation month follows IAEA Table 14. Other historical sources may use a different startup milestone or month.""]"
+braidwood,Braidwood,IL,Illinois,41.244,-88.229,762.71,277.96,[]
+browns-ferry,Browns Ferry,AL,Alabama,34.704,-87.119,784.54,441.37,"[""Commercial-operation month follows IAEA Table 14. Other historical sources may use a different startup milestone or month.""]"
+brunswick,Brunswick,NC,North Carolina,33.958,-78.01,963.74,459.14,[]
+byron,Byron,IL,Illinois,42.074,-89.282,741.99,256.1,[]
+callaway,Callaway,MO,Missouri,38.762,-91.78,692.85,341.71,[]
+calvert-cliffs,Calvert Cliffs,MD,Maryland,38.432,-76.442,994.58,350.02,[]
+catawba,Catawba,SC,South Carolina,35.052,-81.07,903.54,433.02,[]
+clinton,Clinton,IL,Illinois,40.172,-88.835,750.79,305.78,[]
+columbia,Columbia,WA,Washington,46.471,-119.334,150.81,135.22,"[""The unit identifier is EIA generator 2, historically Washington Nuclear Project 2. Columbia has one included reactor.""]"
+comanche-peak,Comanche Peak,TX,Texas,32.298,-97.785,574.72,498.14,[]
+cooper,Cooper,NE,Nebraska,40.362,-95.641,616.9,300.88,[]
+davis-besse,Davis-Besse,OH,Ohio,41.597,-83.086,863.88,268.7,[]
+diablo-canyon,Diablo Canyon,CA,California,35.211,-120.856,120.87,429.2,[]
+donald-c-cook,Donald C. Cook,MI,Michigan,41.975,-86.566,795.42,258.73,[]
+dresden,Dresden,IL,Illinois,41.39,-88.268,761.94,274.14,"[""Older, retired reactor units at this site are excluded. The earliest date shown is for the units included in this operating-fleet snapshot, not the first reactor ever operated here.""]"
+farley,Farley,AL,Alabama,31.223,-85.112,824.03,523.01,[]
+fermi,Fermi,MI,Michigan,41.963,-83.257,860.52,259.04,"[""Older, retired reactor units at this site are excluded. The earliest date shown is for the units included in this operating-fleet snapshot, not the first reactor ever operated here.""]"
+fitzpatrick,FitzPatrick,NY,New York,43.523,-76.398,995.45,217.25,[]
+grand-gulf,Grand Gulf,MS,Mississippi,32.007,-91.048,707.25,504.9,[]
+h-b-robinson,H.B. Robinson,SC,South Carolina,34.403,-80.158,921.48,448.56,[]
+hatch,Hatch,GA,Georgia,31.934,-82.344,878.48,506.59,[]
+hope-creek,Hope Creek,NJ,New Jersey,39.468,-75.538,1012.37,323.81,[]
+lasalle,LaSalle,IL,Illinois,41.246,-88.669,754.05,277.91,[]
+limerick,Limerick,PA,Pennsylvania,40.227,-75.587,1011.4,304.36,[]
+mcguire,McGuire,NC,North Carolina,35.432,-80.948,905.94,423.87,[]
+millstone,Millstone,CT,Connecticut,41.312,-72.169,1078.64,276.18,"[""Older, retired reactor units at this site are excluded. The earliest date shown is for the units included in this operating-fleet snapshot, not the first reactor ever operated here.""]"
+monticello,Monticello,MN,Minnesota,45.334,-93.849,652.15,167.36,[]
+nine-mile-point,Nine Mile Point,NY,New York,43.521,-76.407,995.27,217.31,[]
+north-anna,North Anna,VA,Virginia,38.061,-77.789,968.09,359.31,[]
+oconee,Oconee,SC,South Carolina,34.794,-82.898,867.58,439.21,[]
+palo-verde,Palo Verde,AZ,Arizona,33.389,-112.865,278.07,472.59,[]
+peach-bottom,Peach Bottom,PA,Pennsylvania,39.758,-76.268,998.01,316.41,"[""Older, retired reactor units at this site are excluded. The earliest date shown is for the units included in this operating-fleet snapshot, not the first reactor ever operated here.""]"
+perry,Perry,OH,Ohio,41.801,-81.143,902.1,263.32,[]
+point-beach,Point Beach,WI,Wisconsin,44.281,-87.537,776.32,196.56,[]
+prairie-island,Prairie Island,MN,Minnesota,44.622,-92.633,676.07,187.16,[]
+quad-cities,Quad Cities,IL,Illinois,41.726,-90.31,721.77,265.3,[]
+r-e-ginna,R.E. Ginna,NY,New York,43.278,-77.31,977.51,223.89,"[""Commercial-operation month follows IAEA Table 14. Other historical sources may use a different startup milestone or month.""]"
+river-bend,River Bend,LA,Louisiana,30.757,-91.333,701.65,533.7,[]
+salem,Salem,NJ,New Jersey,39.463,-75.536,1012.41,323.94,[]
+seabrook,Seabrook,NH,New Hampshire,42.899,-70.851,1104.57,234.1,"[""Commercial-operation month follows IAEA Table 14. Other historical sources may use a different startup milestone or month.""]"
+sequoyah,Sequoyah,TN,Tennessee,35.226,-85.092,824.42,428.84,[]
+shearon-harris,Shearon Harris,NC,North Carolina,35.633,-78.955,945.15,419.01,[]
+south-texas-project,South Texas Project,TX,Texas,28.796,-96.049,608.87,578.15,[]
+st-lucie,St. Lucie,FL,Florida,27.349,-80.246,919.75,610.41,[]
+surry,Surry,VA,Virginia,37.166,-76.698,989.55,381.54,[]
+susquehanna,Susquehanna,PA,Pennsylvania,41.089,-76.149,1000.35,282.01,[]
+turkey-point,Turkey Point,FL,Florida,25.434,-80.331,918.08,652.47,[]
+v-c-summer,V.C. Summer,SC,South Carolina,34.299,-81.315,898.72,451.03,[]
+vogtle,Vogtle,GA,Georgia,33.143,-81.766,889.85,478.38,"[""Units 3 and 4 entered commercial service decades after Units 1 and 2; all four are shown separately.""]"
+waterford,Waterford,LA,Louisiana,29.995,-90.471,718.6,551.08,[]
+watts-bar,Watts Bar,TN,Tennessee,35.603,-84.789,830.38,419.74,[]
+wolf-creek,Wolf Creek,KS,Kansas,38.239,-95.689,615.95,354.86,[]
